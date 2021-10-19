@@ -1,0 +1,64 @@
+{
+  "name": "Advanced PWA Course Test Suite",  
+  "short_name": "PWA Test",
+  "lang": "en-US",
+  "start_url": "./?utm_source=pwa#TODO:replace-with-absolute-url-for-ios-trick",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "salmon",
+  "icons": [
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }
+  ],
+  "related_applications": [ 
+    {
+     "platform": "play",
+     "id": "com.myapp.pwa-REPLACE-IT-WITH-A-REAL-APP",
+     "url": "https://play.google.com/store/apps/details?id=com.myapp.pwa-REPLACE-IT-WITH-A-REAL-APP"
+    }
+  ],
+  "prefer_related_applications": false,
+  "share_target": {
+      "action": "./?action=share",
+      "method": "GET",
+      "enctype": "application/x-www-form-urlencoded",
+      "params": {
+        "title": "title",
+        "text": "text",
+        "url": "url"
+      }
+  },
+  "shortcuts": [
+    {
+      "name": "Open a Second Action",
+      "short_name": "Second",
+      "description": "A description",
+      "url": "./?second-action",
+      "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }]
+    },
+    {
+      "name": "Open a Third Action",
+      "short_name": "Third",
+      "description": "A description",
+      "url": "./?third-action",
+      "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }]
+    }
+  ]
+}

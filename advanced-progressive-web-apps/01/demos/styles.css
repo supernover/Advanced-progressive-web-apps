@@ -1,0 +1,19 @@
+#actions {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#actions li {
+    padding: 0;
+}
+
+#actions a {
+    text-decoration: none;
+    padding: 15px;
+    background: green;
+    display: inline-block;
+    color: white;
+    margin: 10px;
+}

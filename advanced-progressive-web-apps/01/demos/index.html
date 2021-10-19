@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>PWA Test Suite</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- 
+    Remember to use absolute URLs -including origin- in case you are using
+    the iOS hack to improve installation reliability
+-->
+<link rel="manifest" href="app.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- TODO: Replace app-id with a real AppStore App's ID -->
+<meta name="apple-itunes-app" content="app-id=com.myapp.pwa">
+
+<!-- Most of the code from the course is in module-X.js or sw-module-X.js -->
+<script src="script.js"></script>
+<script src="module-2.js"></script>
+<script src="module-3.js"></script>
+<script src="module-4.js"></script>
+<script src="module-5.js"></script>
+
+<h1>Advanced Progressive Web Apps Pluralsight Course</h1>
+<h2>Test Suite</h2> 
+
+<h3>Tracking Info</h3>
+<ul id="output">
+
+</ul>
+
+<h3>Actions</h3>
+<ul id="actions">
+    <li><a href="javascript:install()">Install the App</a></li>
+    <li><a href="javascript:checkInstalledApp()">Check Related App Installation</a></li>
+    <li><a href="javascript:persist()">Persist Storage</a></li>
+    <li><a href="javascript:persisted()">Check Persistent Storage</a></li>
+    <li><a href="javascript:quota()">Check Quota</a></li>
+    <li><a href="javascript:pushRequest()">Push Permission</a></li>
+    <li><a href="javascript:pushSubscription()">Push Subscription</a></li>
+    <li><a href="javascript:registerSync()">Sync</a></li>
+    <li><a href="javascript:periodicPermission()">Periodic Sync Permission</a></li>
+    <li><a href="javascript:registerPeriodicSync()">Periodic Sync</a></li>
+    <li><a href="javascript:registerFetch()">Background Fetch</a></li>
+    <li><a href="javascript:requestUpdate()">Check Update</a></li>
+    <li><a href="javascript:badge()">Set a Badge</a></li>
+    <li><a href="javascript:share()">Share</a></li>
+    <li><a href="javascript:openURL('https://www.youtube.com/watch?v=EFGltzFSK-c')">Universal Link</a></li>
+    <li><a href="javascript:openURL('tel:+18882223333')">URI Scheme</a></li>
+    <li><a href="javascript:openURL('intent:#Intent;package=com.pluralsight;S.browser_fallback_url=https://pluralsight.com;end')">Android Intent</a></li>
+</ul>
+
+<footer>
+<p>Test this HTML in a server; some of the actions are available if you install it as a PWA</p>
+
+<p>This is code is free under Apache License 2.0. Created by Maximiliano Firtman (<a href="https://firt.dev">firt.dev</a>)
+</footer>
+
+</html>
