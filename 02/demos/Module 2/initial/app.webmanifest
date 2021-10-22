@@ -1,0 +1,62 @@
+{
+    "name": "Super Calculator PWA",
+    "description": "Super Calculator is a Progressive Web App to make the basic operations and keep a memory of your recent operations",
+    "categories": ["utilities", "finance", "education"],
+    "lang": "en",
+    "short_name": "Calc",
+    "background_color": "silver",
+    "theme_color": "#C43B0E",
+    "orientation": "any",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "icons/icon192.png",
+            "sizes": "192x192",
+            "purpose": "any",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon512.png",
+            "sizes": "512x512",
+            "purpose": "any",
+            "type": "image/png"
+        },  
+        {
+            "src": "icons/icon1024.png",
+            "sizes": "1024x1024",
+            "purpose": "any",
+            "type": "image/png"
+        },            
+        {
+            "src": "icons/icon512_maskable.png",
+            "sizes": "512x512",
+            "purpose": "maskable",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/badge.png",
+            "sizes": "192x192",
+            "purpose": "badge",
+            "type": "image/png"
+        }                   
+    ],
+    "shortcuts": [{
+        "name": "Fresh Calc",
+        "description": "Start a new calculator without memory",
+        "url": "./?memory=clean"
+      },
+      {
+        "name": "Calc 10% Tip",
+        "description": "Start a new calc for a 10% Tip",
+        "url": "./?number=0.10&operation=𝗑"
+      },
+      {
+        "name": "Calc 15% Tip",
+        "description": "Start a new calc for a 15% Tip",
+        "url": "./?number=0.15&operation=𝗑"
+      }
+    ],
+    "screenshots": []
+}

@@ -1,0 +1,195 @@
+body {
+    background-color: #E8D3BB;
+}
+
+html,body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #E8D3BB;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    margin: 0;  
+    min-height: 0px;    
+}
+
+header {
+    margin-top: 10px;
+    height: 62px;
+    flex: 0 1 auto;
+}
+
+#memory {
+    flex: 1;
+    overflow: auto;    
+}
+#memory ul {
+    height: 100%;
+}
+
+#calculator {
+    height: 288px;
+    flex: 0 1 auto;
+}
+
+#button_info {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+#buttons button {
+    background-color: silver;
+    padding: 15px 0;
+}
+#buttons button:hover {
+    background-color: honeydew;
+}
+.row {
+    margin-right: 0px; 
+    margin-left: 0px;
+}
+#buttons button.operator {
+    background-color: antiquewhite;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 12px 0;
+}
+#buttons button.special {
+    background-color: #EEE;
+}
+#buttons button.equals {
+    background-color: darkseagreen;
+}
+#display {
+    text-align: right;
+}
+#display output {
+    font-family: monospace;
+    font-size: 30px;
+    padding: 5px 0 5px 10px;
+    font-weight: bold;;
+}
+#cursor {
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    background-color: silver;
+    animation: cursor 0.5s infinite;
+}
+@keyframes cursor {
+    50% {
+        background-color: white;
+    }
+}
+
+#display {
+    border-top: 1px solid silver;
+    background: #FAFAFA;
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: center;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#memory {
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background: #EEE;
+    color: #333;
+    padding: 10px 20%;
+}
+
+#memory ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 0px 10%;
+}
+#memory strong {
+    font-size: 19px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+}
+#memory ul li {
+    margin: 2px 0;
+}
+#memory ul li.result {
+    border-top: 1px solid #666;
+    margin-bottom: 10px;
+}
+#button_clear {
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #666;
+    background: #999;
+    color: white;
+    margin-left: -60px;
+    opacity: 0.7;
+}
+
+/* We hide the title when the screen is not tall enough, typically landscape on mobile */
+@media (max-height: 350px) {
+    header {
+        display: none;
+    }
+}
+
+/* Different design for viewports wider than 500px */
+@media (min-width: 500px) {
+
+    .container {
+        justify-items: center;        
+        max-width: 100%;
+    }
+
+    main {
+        flex-flow: row;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #calculator {
+        height: auto;
+        flex-grow: 1;
+    }
+
+    #memory {
+        flex-grow: 1;
+        min-width: 50%;
+        padding: 10px 3%;
+        border: 2px solid #666;
+        margin-left: 10px
+    }
+
+    #display {
+        border-left: 1px solid #666;
+    }
+
+    #button_clear {
+        margin-left: -10px;
+    }
+}
+
