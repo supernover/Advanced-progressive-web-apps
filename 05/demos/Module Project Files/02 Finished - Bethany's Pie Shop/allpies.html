@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Bethany's Pie Shop</title>
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    
+    <!-- Main Container -->
+    <div class="container main">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #A593C2;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="images/cake.svg" class="icon mr-3">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="allpies.html">All Pies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>   
+
+        <!-- Page Title -->
+        <div class="d-flex sub-title justify-content-center mb-3 p-5">
+            <h1>All Pies</h1>
+        </div>
+
+        <!-- All Pies Section -->
+        <div class="d-flex flex-column mt-4 mb-3 px-5">
+            <h3 class="title">All Kinds O Pies</h3>
+        </div>
+
+        <!-- Show Pop Overs -->
+        <!-- <div class="d-flex flex-column my-3 px-3">
+            <button id="popButton" type="button" class="btn btn-secondary" onclick="viewPopOvers()">View Popovers</button>
+        </div>       -->
+        
+        <!-- Modal -->
+        <div class="modal fade" tabindex="-1" id="pie1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="images/bethanysmall.jpg" class="image-fluid w-100">
+                            </div>
+                            <div class="col-9">
+                                <p>Bacon ipsum dolor amet turducken venison meatball frankfurter tri-tip bacon chuck cow biltong. Kevin alcatra bresaola, t-bone cupim pork chop ball tip chislic venison strip steak shoulder chicken turducken pancetta. Porchetta brisket pancetta, bresaola jowl ball tip meatloaf pork belly shank. Chislic cupim boudin, meatball short loin pork loin flank frankfurter. Alcatra ham hock filet mignon short loin ham, chislic spare ribs pork chop beef ribs landjaeger. Filet mignon sirloin shoulder, flank picanha chislic pork.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column my-3 px-5">
+            
+            <div class="d-flex flex-row align-items-center pb-3 border-bottom">
+                <img src="images/products/cheesecakesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Cheese Cake</h4>
+                    <p class="text-muted m-0">Plain cheese cake. Plain pleasure.</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$12.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal" data-toggle="modal" data-target="#pie1" data-title="All About Cheese Cake" data-image="images/products/applepiesmall.jpg" data-text="Chupa chups topping sugar plum chocolate cake cake. Danish topping marshmallow. Ice cream donut pastry pie donut dessert icing sugar plum. Gingerbread chupa chups apple pie sweet roll gummi bears cotton candy gummies biscuit.">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/applepiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Apple pie</h4>
+                    <p class="text-muted m-0">Our famous apple pie.</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$14.95</span></h4>
+                    <a id="pop1" class="btn btn-outline-secondary btn-sm mt-2 pie-recipe" onclick="window.location.replace('applepierecipe.html')">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/cranberrypiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Cranberry pie</h4>
+                    <p class="text-muted m-0">A Christmas favorite</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal" data-toggle="modal" data-target="#pie1" data-title="Cranberry Pie" data-image="images/products/cranberrypiesmall.jpg" data-text="Chupa chups topping sugar plum chocolate cake cake. Danish topping marshmallow. Ice cream donut pastry pie donut dessert icing sugar plum.">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/cherrypiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Cherry pie</h4>
+                    <p class="text-muted m-0">A summer classic!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/peachpiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Peach pie</h4>
+                    <p class="text-muted m-0">Sweet as peach</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/pumpkinpiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Pumpkin pie</h4>
+                    <p class="text-muted m-0">Our Halloween favorite</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/christmasapplepiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Christmas apple pie</h4>
+                    <p class="text-muted m-0">Happy holidays with this pie!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$19.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/blueberrycheesecakesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Blueberry cheese cake</h4>
+                    <p class="text-muted m-0">You'll love it!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$17.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/rhubarbpiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Rhubarb Pie</h4>
+                    <p class="text-muted m-0">My God, so sweet!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$21.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/strawberrypiesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Strawberry Pie</h4>
+                    <p class="text-muted m-0">Our delicious strawberry pie!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center py-3 border-bottom">
+                <img src="images/products/strawberrycheesecakesmall.jpg" class="img-fluid thumb shadow">
+                <div class="d-flex flex-column ml-3 mr-auto">
+                    <h4>Strawberry Cheese Cake</h4>
+                    <p class="text-muted m-0">One of the best cheese cakes you'll ever find!</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h4><span class="badge badge-success p-2">$18.95</span></h4>
+                    <button role="button" class="btn btn-outline-secondary btn-sm mt-2 pie-modal">Learn More</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer class="d-flex flex-column my-2 pb-3 footer align-items-center text-muted">
+            <p><strong>Our address is</strong></p>
+            <p class="italic">Bakery Street 555 Brussels Belgium</p>
+            <p>© 2020 Bethany's Pie Shop - All rights reserved</p>
+        </footer>
+
+    </div>
+
+    <!-- External JS Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
